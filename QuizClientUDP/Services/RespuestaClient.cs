@@ -23,7 +23,7 @@ namespace QuizClientUDP.Services
         internal void EnviarRespuesta(RespuestaCModel dto)
         {
             var ipe = new IPEndPoint(IPAddress.Parse(Servidor),
-                      5001);
+                      6000);
             var json = JsonSerializer.Serialize(dto);
             byte[] buffer = Encoding.UTF8.GetBytes(json);
 
