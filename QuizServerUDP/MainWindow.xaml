@@ -1,0 +1,106 @@
+﻿<Window x:Class="QuizServerUDP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuizServerUDP"
+        xmlns:vm="clr-namespace:QuizServerUDP.ViewModel"
+        xmlns:v="clr-namespace:QuizServerUDP.View"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        ResizeMode="NoResize">
+    <Window.DataContext>
+        <vm:MainVM></vm:MainVM>
+    </Window.DataContext>
+    <Grid Background="#FF727D73">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Título centrado arriba -->
+        <Grid Background="#D0DDD0">
+            <Label Content="Quizz" 
+         HorizontalAlignment="Center" 
+         VerticalAlignment="Center" 
+         FontFamily="Stencil Std, fantasy" 
+         FontSize="45" 
+         Foreground="White"/>
+            <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20">Dirección IP: <Run Text="{Binding IP}"></Run></TextBlock>
+
+        </Grid>
+        <Grid Grid.Row="1" Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="507*"/>
+
+                <ColumnDefinition Width="253*"/>
+
+            </Grid.ColumnDefinitions>
+            <!-- Sección de usuario -->
+            <ItemsControl ItemsSource="{Binding Usuarios}" Height="280" VerticalAlignment="Top" Grid.Column="1" Background="#D0DDD0" Margin="5 0 ">
+
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+
+                        <Grid Background="#D0DDD0" VerticalAlignment="Top" Height="auto" Margin="10,0,10,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Usuario:"  FontWeight="Bold" VerticalAlignment="Center" FontSize="20" Foreground="Black" Padding="5" Margin="0,0,0,5"/>
+                            <Label HorizontalAlignment="Center"  VerticalAlignment="Center" FontSize="15" Grid.Column="1" Content="{Binding Nombre}"></Label>
+                            <!--<ListBox ItemsSource="{Binding usuarios}" DisplayMemberPath="Nombre" Height="280" Background="#D0DDD0"/>-->
+
+                        </Grid>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+
+            </ItemsControl>
+            <!--Contenido principal-->
+
+
+
+
+            <!-- Sección de usuario -->
+            <!---->
+
+            <ContentControl Height="280" VerticalAlignment="Top" Background="#D0DDD0">
+
+                <ContentControl.Resources>
+                    <v:SeccionesView x:Key="Secciones" Height="280" Width="488"></v:SeccionesView>
+                    <v:PreguntasView x:Key="Preguntas" Height="280" Width="488"></v:PreguntasView>
+                    <!--<v:Ganador x:Key="Ganador" Height="280" Width="488"></v:Ganador>-->
+
+                </ContentControl.Resources>
+                <ContentControl.Style>
+                    <Style TargetType="ContentControl">
+                        <Style.Triggers>
+                            <DataTrigger Value="Secciones" Binding="{Binding Vista}">
+                                <Setter Property="Content" Value="{StaticResource Secciones}"/>
+                                <!--funciona como if-->
+
+                            </DataTrigger>
+                            <!--Preguntas-->
+                            <DataTrigger Value="Preguntas" Binding="{Binding Vista}">
+                                <Setter Property="Content" Value="{StaticResource Preguntas}"/>
+                                <!--funciona como if-->
+                            </DataTrigger>
+                            <!--<DataTrigger Value="Ganador" Binding="{Binding Vista}">
+                                    <Setter Property="Content" Value="{StaticResource Ganador}"/>
+                                    -->
+                            <!--funciona como if-->
+                            <!--
+                                </DataTrigger>-->
+                        </Style.Triggers>
+                    </Style>
+                </ContentControl.Style>
+
+                <!--se supone que tambien aqui se debe de mostrar las preguntas y el tiempo a elegir-->
+            </ContentControl>
+        </Grid>
+
+    </Grid>
+
+
+</Window>

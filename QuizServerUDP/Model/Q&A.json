@@ -1,0 +1,212 @@
+{
+  "Historia": [
+    {
+      "Pregunta": "¿En qué fecha se firmó la Constitución de 1917?",
+      "Respuestas": [
+        "5 de mayo de 1917",
+        "5 de febrero de 1917",
+        "5 de febrero de 1920",
+        "5 de mayo de 1920"
+      ],
+      "RespuestaCorrecta": 2
+    },
+    {
+      "Pregunta": "¿Cuánto tiempo duró la guerra de los 100 años?",
+      "Respuestas": [
+        "90 años",
+        "115 años",
+        "100 años",
+        "116 años"
+      ],
+      "RespuestaCorrecta": 4
+    },
+    {
+      "Pregunta": "¿Quién fue el primer hombre en caminar sobre la luna?",
+      "Respuestas": [
+        "Buzz Aldrin",
+        "Alan Armstrong",
+        "Alan Shepard",
+        "Neil Armstrong"
+      ],
+      "RespuestaCorrecta": 4
+    },
+    {
+      "Pregunta": "¿Dónde nació Adolf Hitler?",
+      "Respuestas": [
+        "Austria",
+        "Alemania",
+        "Rusia",
+        "Polonia"
+      ],
+      "RespuestaCorrecta": 1
+    },
+    {
+      "Pregunta": "¿Qué ciudades fueron bombardeadas con bombas atómicas en 1945?",
+      "Respuestas": [
+        "Hiroshima y Nagasaki",
+        "Hiroshima y Tokio",
+        "Yokohama y Tokio",
+        "Tokio y Nagasaki"
+      ],
+      "RespuestaCorrecta": 1
+    }
+  ],
+  "Español": [
+    {
+      "Pregunta": "¿Quién escribió \"Don Quijote de la Mancha\"?",
+      "Respuestas": [
+        "Miguel de Cervantes",
+        "Federico García Lorca",
+        "William Shakespeare",
+        "Gabriel García Márquez"
+      ],
+      "RespuestaCorrecta": 1
+    },
+    {
+      "Pregunta": "¿Qué autor es conocido por el realismo mágico y escribió \"Cien años de soledad\"?",
+      "Respuestas": [
+        "Miguel de Cervantes",
+        "Gabriel García Márquez",
+        "William Shakespeare",
+        "Jorge Luis Borges"
+      ],
+      "RespuestaCorrecta": 2
+    },
+    {
+      "Pregunta": "¿Qué autor es conocido por sus cuentos de terror y misterio, como El cuervo y El corazón delator?",
+      "Respuestas": [
+        "Stephen King",
+        "Gabriel García Márquez",
+        "William Shakespeare",
+        "Edgar Allan Poe"
+      ],
+      "RespuestaCorrecta": 4
+    },
+    {
+      "Pregunta": "¿Qué es una fábula?",
+      "Respuestas": [
+        "Un poema épico",
+        "Una novela larga",
+        "Un cuento corto con una lección moral",
+        "Una historia de terror"
+      ],
+      "RespuestaCorrecta": 3
+    },
+    {
+      "Pregunta": "¿Qué es un poema?",
+      "Respuestas": [
+        "Un relato de eventos reales",
+        "Un texto que expresa sentimientos e ideas usando versos",
+        "Una carta formal",
+        "Un texto científico"
+      ],
+      "RespuestaCorrecta": 2
+    }
+
+  ],
+  "Matemáticas": [
+    {
+      "Pregunta": "¿Cuánto es 15 ÷ 3?",
+      "Respuestas": [
+        "5",
+        "8",
+        "1",
+        "3"
+      ],
+      "RespuestaCorrecta": 1
+    },
+
+    {
+      "Pregunta": "¿Cuántos lados tiene un dodecágono?",
+      "Respuestas": [
+        "17",
+        "6",
+        "10",
+        "12"
+      ],
+      "RespuestaCorrecta": 4
+    },
+    {
+      "Pregunta": "¿Cuál es la fórmula del teorema de Pitágoras?",
+      "Respuestas": [
+        "a² = b² + c²",
+        "c² = a² + b²",
+        "c² = a² - b²",
+        "c = a + b"
+      ],
+      "RespuestaCorrecta": 2
+    },
+    {
+      "Pregunta": "¿Cuál es la fórmula para calcular el área de un triángulo?",
+      "Respuestas": [
+        "A = (b × h) / 2",
+        "A = 2(b × h)",
+        "A = (b × h) / 3",
+        "A = 2(b × h)"
+      ],
+      "RespuestaCorrecta": 1
+    },
+    {
+      "Pregunta": "¿Cuánto es ¾ en decimal?",
+      "Respuestas": [
+        "0.50",
+        "75",
+        "0.75",
+        "0.55"
+      ],
+      "RespuestaCorrecta": 3
+    }
+  ],
+  "Ciencias Naturales": [
+    {
+      "Pregunta": "¿Cuál físico descubrió la gravedad?",
+      "Respuestas": [
+        "Isaac Newton",
+        "Galileo Galilei",
+        "Niels Bohr",
+        "Albert Einstein"
+      ],
+      "RespuestaCorrecta": 1
+    },
+    {
+      "Pregunta": "¿Cuál es el planeta más grande de nuestro sistema solar?",
+      "Respuestas": [
+        "Saturno",
+        "Marte",
+        "Júpiter",
+        "Neptuno"
+      ],
+      "RespuestaCorrecta": 3
+    },
+    {
+      "Pregunta": "¿Cuál es el símbolo químico del oro?",
+      "Respuestas": [
+        "Pb",
+        "Au",
+        "Ag",
+        "Mn"
+      ],
+      "RespuestaCorrecta": 2
+    },
+    {
+      "Pregunta": "¿Cuál es la fórmula química de la sal de mesa?",
+      "Respuestas": [
+        "MgSO4",
+        "CaCO3",
+        "NaCl",
+        "KCl"
+      ],
+      "RespuestaCorrecta": 3
+    },
+    {
+      "Pregunta": "¿Cuál es la ciencia que estudia los cuerpos celestes del universo?",
+      "Respuestas": [
+        "Astrología",
+        "Astronomía",
+        "Elogía",
+        "Meteorología"
+      ],
+      "RespuestaCorrecta": 2
+    }
+  ]
+}
