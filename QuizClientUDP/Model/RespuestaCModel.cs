@@ -10,6 +10,7 @@ namespace QuizClientUDP.Model
     {
         public string Nombre { get; set; } = null!;
         public int NumRespuesta { get; set; }
+        public string IpJugador { get; set; } = null!;
 
     }
 }

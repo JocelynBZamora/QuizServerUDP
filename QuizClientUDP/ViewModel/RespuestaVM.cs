@@ -6,6 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Net;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -36,6 +38,8 @@ namespace QuizClientUDP.ViewModel
             if (dto.Nombre != string.Empty)
             {
                 ClienteUDP.Servidor = IP;
+                var ipclient = Dns.GetHostAddresses(Dns.GetHostName());
+                dto.IpJugador = ipclient[0].ToString();
                 ClienteUDP.EnviarRespuesta(dto);
 
             }

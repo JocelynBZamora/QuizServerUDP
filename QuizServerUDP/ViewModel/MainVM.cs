@@ -30,6 +30,9 @@ namespace QuizServerUDP.ViewModel
         public int puntaje = 0;
         public ObservableCollection<UsuarioSModel> Usuarios { get; set; } = new();
         List<UsuarioSModel> usuarios = new();//persistente
+
+        ObservableCollection<RespuestasClientModel> Respuesta = new();
+        List<RespuestasClientModel>respuestas = new();
         Servidor server = new();
 
         public MainVM()
@@ -64,6 +67,7 @@ namespace QuizServerUDP.ViewModel
                     {
 
                         UsuarioSModel u = new();
+                        
                         u.Nombre = obj.Nombre;
                         usuarios.Add(u);
                     }
